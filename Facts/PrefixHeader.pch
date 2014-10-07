@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  Facts
+//
+//  Created by Javier Berlana on 05/10/14.
+//  Copyright (c) 2014 Javier Berlana. All rights reserved.
+//
+
+#ifndef Facts_PrefixHeader_pch
+#define Facts_PrefixHeader_pch
+
+#import "CocoaLumberjack.h"
+
+static const int ddLogLevel = LOG_LEVEL_VERBOSE;
+
+#endif
