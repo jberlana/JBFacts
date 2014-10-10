@@ -1,11 +1,11 @@
 Facts
 ===============
 
-**Facts** es una app muy simple que trabaja con la API [numbersapi](http://numbersapi.com)  que devuelve datos curiosos sobre números, fechas o de forma aleatoria.
+**Facts** es una app muy simple que trabaja con la API [numbersapi](http://numbersapi.com) que devuelve datos curiosos sobre números, fechas o de forma aleatoria.
 
 ## Estructura de la app
 
-La app es compatible con todos los dispositivos iOS, iPad y iPhone y soporta las nuevas pantallas de 4.7" y 5.5".
+La app es compatible con todos los dispositivos iOS: iPad y iPhone. Soporta las nuevas pantallas de 4.7" y 5.5".
 
 Consta de dos pantallas:
 
@@ -17,7 +17,7 @@ Consta de dos pantallas:
 El proyecto contiene los siguientes directorios:
 
 - **API**: Contiene la clase `NumbersAPIClient` encargada de realizar toda la comunicación con el API de numbersAPI. 
-- **Model**: Contiene las relativas al modelo de datos de la app. La clase `Fact` y sus subclases: `NumberFact`, `DateFact` y `RandomFact`. Más adelante, en patrones utilizados se hablara de la arquitectura de estas clases.
+- **Model**: Contiene las calses relativas al modelo de datos de la app. La clase `Fact` y sus subclases: `NumberFact`, `DateFact` y `RandomFact`. Más adelante, en patrones utilizados se hablara de la arquitectura de estas clases.
 - **View**: Contiene las vistas de la app `FactTypeButton`, `FactInputTextField` y `DateMonthPickerView`.
 - **Controller**: Contiene los view controllers, por un lado los *parent view controllers* de los que heredarán el resto de controladores de la app `FactsNavigationController` y `FactsViewController` heredar de estos en lugar de los homólogos `UINavigationController` y `UIViewController` nos va a permitir realizar tareas comunes a toda la app en un único lugar. Por último las clases que manejan las dos pantallas de la app: `HomeViewController` y `FactDetailViewController`.
 - **Media**: Directorio que contiene las imágenes del proyecto (haciendo uso de `xcassets`), y dónde en el futuro podremos albergar sonidos, fuentes custom u otros elementos multimedia de los que haga uso la app.
@@ -82,7 +82,7 @@ Se piden tres nucas características para la app:
 
 ####¿Cómo plantearías el roadmap? 
 
-El roadmap dependerá mucho de los recursos humanos disponibles, en caso de tener 3 iOS deis son acciones que se podrían desarrollar en paralelo sin problema pues afectan a diferentes capas de la app.
+El roadmap dependerá mucho de los recursos humanos disponibles, en caso de tener 3 desarrolladores iOS son acciones que se podrían desarrollar en paralelo sin problema, pues afectan a diferentes capas de la app.
 
 Una estimación en horas del coste de desarrollo de cada una de las tareas sería:
 
@@ -95,7 +95,7 @@ Una estimación en horas del coste de desarrollo de cada una de las tareas serí
 - Compartir en twitter o Facebook. (< 1hora)
 	- Tarea básica que desde el SDK del iOS 7 se realiza de forma nativa utilizando el Framework `<Social/Social.h>`. Además con iOS 8 podemos aprovechar los widgets de compartir de otras apps, no solo Facebook y Twitter.
 
-Dado que son tareas muy simples que se podrían llevar a cabo en menos de una jornada de trabajo, priorizaría la implementación dependiendo de sus dependencias, por ejemplo disponer del diseño de las pantallas para introducir los datos, o que el backend tenga los métodos desarrollados para poder almacenar datos.
+Dado que son tareas muy simples que se podrían llevar a cabo en menos de una jornada de trabajo, priorizaría la implementación dependiendo de sus dependencias, por ejemplo: disponer del diseño de las pantallas para introducir los datos, o que el backend tenga los métodos desarrollados para poder almacenar datos.
 
 Sin duda la primera tarea que desarrollaría sería la integración social, ya que va ayudar a incrementar las posibilidades de viralización de nuestra app y por tanto a conseguir más descargas.
 
